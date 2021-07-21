@@ -1,10 +1,11 @@
+//needs review
 const longestPalindrome = (word) => {
     if (word === null || word.length < 1){
         return "";
     }
     let start = 0, end = 0;
 
-    for (let i = 0; i < word.length; i++) {
+    for (let i = 0; i < word.length - 1; i++) {
         const len1 = expandAroundCenter(word, i, i);
         const len2 = expandAroundCenter(word, i, i + 1);
 
@@ -28,5 +29,5 @@ const expandAroundCenter = (word, left, right) => {
     return R-L-1;
 }
 
-const checkWord = 'abacdfgdcaba';
+const checkWord = "cbbd";
 console.log(longestPalindrome(checkWord));
