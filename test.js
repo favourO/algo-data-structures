@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 // const A = [0, 2, 3, 4, 1, 1, 1, 3, 1];
 
 // function solution(A) {
@@ -69,3 +70,11 @@ const duplicateNames = names => {
 let checknames = ["twitter", "linkedIn", "devto", "twitter", "instagram", "devto", "al", "siam", "alsiam", "alsiamworld"];
 
 console.log(duplicateNames(checknames));
+=======
+const nu = [5,3,4,5];
+
+//const n = nu.filter(e  => e < 5).map(e => e*5)
+
+const n = nu.reduce((a,b) => a + b)
+console.log(n)
+>>>>>>> 9eb5430549824e358390419e0494863a2f10c346
